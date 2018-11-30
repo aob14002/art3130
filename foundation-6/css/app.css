@@ -1,0 +1,23 @@
+h1 {
+font-family: serif;
+  font-size: 4em;
+color: black; }
+h4 {
+    font-family: serif;
+    font-size: 3em;
+    color: aqua
+}
+
+.background {
+    min-height: 100vh;
+    background-size:contain;
+    background-position: top center;
+    background-color: black;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.main{
+    font-size: 15em;
+}
+
