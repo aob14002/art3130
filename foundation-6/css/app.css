@@ -11,7 +11,7 @@ h4 {
 
 /* Global styles applied throughout the site */
 section {
-    
+
   min-height: 100vh; /* each page section occupies the full vertical height */
 }
 
@@ -20,8 +20,14 @@ section {
 }
 
 /* Section-specific styles */
+ul.names {
+  margin:0;
+  padding:1em;
+}
 
-
+ul.names li {
+  list-style: none;
+}
 
 
 
@@ -54,7 +60,7 @@ section {
 }
 
 .large-section-header {
-  font-size: 15em;
+  font-size: 20vw;
 }
 
 /* make a "fake" element just to contain the background image, so it can be transformted */
@@ -72,7 +78,7 @@ section {
 }
 .Shoe_Masters {
     font-family: "Times New Roman", Times, monospace;
-    background-color: slategrey;
+    background-color: darkgrey;
     padding: 30px;
     text-align: center;
     font-size: 48px;
@@ -108,15 +114,12 @@ section {
 
 .shoemaster_names{
        font-family: "Times New Roman", Times, monospace;
-    background-color: darkgrey;
+    background-color: slategrey;
     text-align: center;
     font-size: 24px;
     color: black; ''
-    
+
 }
 .BKSS_body{
     font-size: 30px;
 }
-
-
-    
