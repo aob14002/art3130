@@ -1,23 +1,122 @@
-h1 {
-font-family: serif;
+/*h1 {
+  font-family: serif;
   font-size: 4em;
-color: black; }
+  color: black;
+}
 h4 {
-    font-family: serif;
-    font-size: 3em;
-    color: aqua
+  font-family: serif;
+  font-size: 3em;
+}*/
+
+
+/* Global styles applied throughout the site */
+section {
+    
+  min-height: 100vh; /* each page section occupies the full vertical height */
 }
 
-.background {
-    min-height: 100vh;
-    background-size:contain;
-    background-position: top center;
-    background-color: black;
-    background-repeat: no-repeat;
-    color: white;
+.text-invert {
+  color: white;
 }
 
-.main{
-    font-size: 15em;
+/* Section-specific styles */
+
+
+
+
+
+.intro-text {
+  position: absolute;
+  top: 50%;
+  /*
+    "top: 50%" only moves the TOP of the text 50% from the top of the container.
+    "transform: translateY(-50%)" moves move it back up half the height of the text itself,
+      so it is perfectly vertically centered
+  */
+  transform: translateY(-50%);
+  text-transform: uppercase;
 }
 
+.intro-left .intro-text {
+  right: 0;
+}
+
+.intro-right .intro-text {
+  left: 0;
+}
+
+
+#adidas {
+  background-color: black;
+  position: relative;
+  overflow: hidden; /* crop off any part of the background image that overflows */
+  z-index: 0; /* so this section's content appear in front of the background image */
+}
+
+.large-section-header {
+  font-size: 15em;
+}
+
+/* make a "fake" element just to contain the background image, so it can be transformted */
+.adidas-background:before {
+  content: '';
+  background-position: center;
+  background-image: url(../adidas-futurecraft-4d-sneaker-00.jpg);
+  background-repeat: no-repeat;
+  position: absolute;
+  -webkit-transform: rotate(-30deg) translate(510px, -100px);
+  transform: rotate(-30deg) translate(510px, -100px);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.Shoe_Masters {
+    font-family: "Times New Roman", Times, monospace;
+    background-color: slategrey;
+    padding: 30px;
+    text-align: center;
+    font-size: 48px;
+    color: black;
+}
+
+.personal_header{
+     font-family: "Times New Roman", Times, monospace;
+    background-color: slategrey;
+    padding: 30px;
+    text-align: center;
+    font-size: 48px;
+    color: black;
+}
+
+.BKSS_header{
+   font-family: "Times New Roman", Times, monospace;
+    background-color: slategrey;
+    padding: 30px;
+    text-align: center;
+    font-size: 48px;
+    color: black; ''
+}
+
+.class_header{
+    font-family: "Times New Roman", Times, monospace;
+    background-color: slategrey;
+    padding: 30px;
+    text-align: center;
+    font-size: 48px;
+    color: black; ''
+}
+
+.shoemaster_names{
+       font-family: "Times New Roman", Times, monospace;
+    background-color: darkgrey;
+    text-align: center;
+    font-size: 24px;
+    color: black; ''
+    
+}
+.BKSS_body{
+    font-size: 30px;
+}
+
+
+    
